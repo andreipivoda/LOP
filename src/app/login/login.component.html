@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="assets/left1.png">
+        <img src="assets/left2.png">
+        <img src="assets/left3.png">
+    </div>
+    <div class="grid-item"></div>
+    <div class="_center">
+
+        <h1 style="width:50vw;margin-left:-75%;">Welcome to AUTOLIV ROMANIA LOP</h1>
+        <br>
+        <br>
+        <br>
+        <mat-form-field>
+            <mat-label>Please select your Division</mat-label>
+
+            <mat-select>
+                <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="accent">GO</button>
+        <img class="_center_img" src="assets/center1.png">
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+        <img src="assets/right1.png">
+        <img src="assets/right2.png">
+        <img src="assets/right3.png">
+    </div>
+</div>

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  foods = [
+    {value: '0', viewValue: 'IRO'},
+    {value: '1', viewValue: 'RBT'},
+    {value: '2', viewValue: 'RBD'}
+  ];
   constructor() { }
 
   ngOnInit(): void {
